@@ -1,10 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Download, Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 import { useState } from "react";
 import { useTheme } from "next-themes";
-
-const RESUME_URL = "https://drive.google.com/file/d/1NUsQArelmvQBhLlNdtJuIG7n2krPkpmC/view?usp=drive_link";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -62,12 +60,6 @@ const Navigation = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
           {navItems.map((item) => getNavLink(item))}
-          <Button size="sm" className="border border-border gap-2" asChild>
-            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
-              <Download className="w-4 h-4" />
-              Resume
-            </a>
-          </Button>
           <Button
             variant="outline"
             size="icon"
@@ -128,12 +120,6 @@ const Navigation = () => {
                 </Link>
               )
             ))}
-            <Button size="sm" className="border border-border gap-2 w-fit" asChild>
-              <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
-                <Download className="w-4 h-4" />
-                Resume
-              </a>
-            </Button>
           </div>
         </div>
       )}
