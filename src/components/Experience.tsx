@@ -1,7 +1,7 @@
 const Experience = () => {
   const experiences = [
     {
-      role: "Software Product Engineer",
+      role: "AI Engineer",
       company: "Valeo | Autonomous Vehicles",
       period: "2022 - 2024",
       description:

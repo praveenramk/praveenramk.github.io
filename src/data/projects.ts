@@ -14,7 +14,7 @@ export const projects: Project[] = [
 
 **Object Detection**: Real-time detection and tracking of vehicles, pedestrians, cyclists, and other road users using a YOLO-inspired detection head with custom anchor boxes optimized for traffic scenarios.
 
-The architecture uses a shared encoder backbone (ResNet-50 with FPN) that extracts hierarchical features, with task-specific decoder heads for each output. This shared representation learning approach reduces computational overhead by 60% compared to running separate models while maintaining competitive accuracy.
+The architecture uses a shared encoder backbone that extracts hierarchical features, with task-specific decoder heads for each output. This shared representation learning approach reduces computational overhead by 60% compared to running separate models while maintaining competitive accuracy.
 
 Key technical achievements:
 - Real-time inference at 30+ FPS on NVIDIA RTX 3080
